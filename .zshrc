@@ -8,6 +8,8 @@ ZSH_THEME="robbyrussell"
 DISABLE_UPDATE_PROMPT=true
 HIST_STAMPS="dd.mm.yyyy"
 
+export USER="angel.custodio"
+export ZSH="/Users/$USER/.oh-my-zsh"
 export EDITOR="vim"
 export ARCHFLAGS="-arch x86_64"
 
@@ -21,3 +23,6 @@ alias fixopenwith="/System/Library/Frameworks/CoreServices.framework/Frameworks/
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+
+### LOAD
+source $ZSH/oh-my-zsh.sh
