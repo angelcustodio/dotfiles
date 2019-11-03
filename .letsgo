@@ -1,0 +1,33 @@
+# ~/.letsgo
+# Angel Custodio
+# run without downloading:
+# curl https://raw.githubusercontent.com/kentcdodds/dotfiles/master/.macos | bash
+
+echo "close any open system preferences panes"
+osascript -e 'tell application "System Preferences" to quit'
+
+echo "ask for admin password"
+sudo -v
+
+echo "keep-alive sudo until script has finished"
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+echo "Hi $(whoami)! Let's go!"
+
+echo "install brew"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo "install brew packages"
+brew install git nvm wget z
+
+echo "install brew cask apps"
+brew cask install atom beamer coconutbattery cleanmymac dropshare google-chrome \
+hyper karabiner-elements spectacle spotify transmission tunnelbear typora vlc
+
+echo "install ohmyzsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+
+echo "pending things:"
+echo "  - copy .zshrc file"
+echo "  - copy .gitconfig file"
+echo "  - ssh keys to github"
