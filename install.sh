@@ -32,6 +32,7 @@ echo "> Packages installation"
 declare -a list_of_packages=(
   'autojump'
   'awscli'
+  'bash-completion'
   'git'
   'htop'
   'kubectx'
