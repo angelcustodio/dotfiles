@@ -19,6 +19,10 @@ echo "Now, let's configure your system..."
 /bin/bash config.sh
 
 echo ""
+echo "Now, let's create a couple of folders..."
+cd $HOME && mkdir {Code,Personal}
+
+echo ""
 echo "Now, let's restart some services..."
 killall Dock
 killall Finder
