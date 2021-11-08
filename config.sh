@@ -4,13 +4,7 @@ echo ""
 read -p "Define your user name: " USERNAME
 read -p "Define your device name: " DEVICENAME
 
-echo ""
-echo "OK, $USERNAME, let's configure $DEVICENAME"
-
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
-echo ""
-echo "Let's begin..."
 
 echo ""
 echo "> Set bash as default"
