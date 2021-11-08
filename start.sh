@@ -2,21 +2,21 @@
 
 echo ""
 echo "Hello! Let's configure your device and install all apps/packages you need."
-echo "First, put your admin credentials:"
+echo "Please, enter your admin password:"
 sudo -v
 
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-chmod +x config.sh
-chmod +x install.sh
+chmod 755 ./config.sh
+chmod 755 ./install.sh
 
 echo ""
 echo "Now, let's install apps and packages, it can take a while..."
-/bin/bash install.sh
+source ./install.sh
 
 echo ""
 echo "Now, let's configure your system..."
-/bin/bash config.sh
+source ./config.sh
 
 echo ""
 echo "Now, let's create a couple of folders..."
