@@ -110,5 +110,12 @@ read -p "Set your git email: " GITMAIL
 git config --global user.name $GITNAME
 git config --global user.email $GITMAIL
 
+echo "> Move bash profile file"
+mv ./files/.bash_profile $HOME/.bash_profile
+
+echo "> Restart some services"
+killall Dock
+killall Finder
+
 echo ""
 echo "DONE! Your system is now configured!"

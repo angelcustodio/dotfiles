@@ -24,11 +24,6 @@ echo "Now, let's create a couple of folders..."
 source ./folders.sh
 
 echo ""
-echo "Now, let's restart some services..."
-killall Dock
-killall Finder
-
-echo ""
 echo "That's it!"
 echo "Your device will be rebooted in 1 minute"
 sudo shutdown -r +1
