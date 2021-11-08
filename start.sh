@@ -30,4 +30,4 @@ killall Finder
 echo ""
 echo "That's it!"
 echo "Your device will be rebooted in 1 minute"
-shutdown -r +1
+sudo shutdown -r +1

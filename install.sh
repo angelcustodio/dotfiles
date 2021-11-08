@@ -15,7 +15,7 @@ declare -a list_of_apps=(
   'firefox'
   'google-chrome'
   'gpg-suite'
-  'iterm'
+  'iterm2'
   'karabiner-elements'
   'meetingbar'
   'rectangle'

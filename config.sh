@@ -38,7 +38,7 @@ defaults write com.apple.finder ShowSidebar -bool true
 defaults write com.apple.finder ShowRecentTags -bool false
 defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder ShowStatusBar -bool true
-defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool false
 defaults write com.apple.finder FinderSpawnTab -bool false
 defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
