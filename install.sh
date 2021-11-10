@@ -21,6 +21,7 @@ declare -a list_of_apps=(
   'rectangle'
   'slack'
   'spotify'
+  'topnotch'
   'typora'
   'zoom'
 )
