@@ -7,6 +7,7 @@ xcode-select -s /Library/Developer/CommandLineTools
 
 echo "> Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "> Apps installation"
 declare -a list_of_apps=(
@@ -23,6 +24,7 @@ declare -a list_of_apps=(
   'spotify'
   'topnotch'
   'typora'
+  'vanilla'
   'zoom'
 )
 for app in "${list_of_apps[@]}"; do
