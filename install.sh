@@ -7,6 +7,8 @@ xcode-select -s /Library/Developer/CommandLineTools
 
 echo "> Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo "> Checking Homebrew"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "> Apps installation"
