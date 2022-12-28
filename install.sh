@@ -18,6 +18,7 @@ declare -a list_of_apps=(
   'firefox'
   'google-chrome'
   'gpg-suite'
+  'insomnia'
   'iterm2'
   'karabiner-elements'
   'meetingbar'
@@ -27,10 +28,11 @@ declare -a list_of_apps=(
   'topnotch'
   'typora'
   'vanilla'
+  'visual-studio-code'
   'zoom'
 )
 for app in "${list_of_apps[@]}"; do
-  brew install "$app"
+  brew install --cask "$app"
 done
 
 echo "> Packages installation"
