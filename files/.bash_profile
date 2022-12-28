@@ -1,7 +1,9 @@
 ### BASICS
+export USER=$(whoami)
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export EDITOR="vi"
 export PATH="/usr/local/bin:$PATH"
+export PATH="$PATH:/Users/$USER/.yarn/bin"
 
 ### BREW
 eval "$(/opt/homebrew/bin/brew shellenv)"
