@@ -13,20 +13,19 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "> Apps installation"
 declare -a list_of_apps=(
-  'atom'
+  'caffeine'
   'coconutbattery'
+  'elgato-wave-link'
   'firefox'
   'google-chrome'
   'gpg-suite'
   'insomnia'
-  'iterm2'
   'karabiner-elements'
   'meetingbar'
   'rectangle'
   'slack'
   'spotify'
   'topnotch'
-  'typora'
   'vanilla'
   'visual-studio-code'
   'zoom'
