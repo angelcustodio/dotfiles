@@ -38,9 +38,11 @@ defaults write com.apple.finder ShowSidebar -bool true
 defaults write com.apple.finder ShowRecentTags -bool false
 defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder AppleShowAllExtensions -bool true
 defaults write com.apple.finder AppleShowAllFiles -bool false
 defaults write com.apple.finder FinderSpawnTab -bool false
 defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
@@ -100,6 +102,9 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write -g com.apple.swipescrolldirection -bool false
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
+defaults write com.apple.spaces spans-displays -bool true
+defaults write com.apple.menuextra.clock DateFormat -string "\"EEE d MMM HH:mm\""
+
 systemsetup -setcomputersleep Off > /dev/null
 
 sudo chflags nohidden ~/Library
