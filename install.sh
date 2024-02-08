@@ -28,6 +28,7 @@ declare -a list_of_apps=(
   'topnotch'
   'vanilla'
   'visual-studio-code'
+  'warp'
   'zoom'
 )
 for app in "${list_of_apps[@]}"; do
