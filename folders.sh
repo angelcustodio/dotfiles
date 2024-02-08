@@ -13,4 +13,4 @@ done
 
 echo "> Move config files to their folder"
 \cp -a $HOME/dotfiles/files/. $HOME/
-\cp -f $HOME/dotfiles/config/iterm2/com.googlecode.iterm2.plist $HOME/Library/Preferences/
+\cp -f $HOME/dotfiles/configs/dev.warp.Warp-Stable.plist $HOME/Library/Preferences/
