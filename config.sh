@@ -100,6 +100,10 @@ defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool true
 defaults write -g NSAutomaticQuotesSubstitutionEnabled -bool false
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write -g com.apple.swipescrolldirection -bool false
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop 0
+defaults write com.apple.WindowManager StageManagerHideWidgets 1
+defaults write com.apple.WindowManager StandardHideWidgets 1
+defaults write com.apple.WindowManager AutoHide 1
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults write com.apple.spaces spans-displays -bool true
