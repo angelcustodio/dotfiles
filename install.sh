@@ -16,7 +16,6 @@ declare -a list_of_apps=(
   'caffeine'
   'coconutbattery'
   'elgato-wave-link'
-  'firefox'
   'google-chrome'
   'gpg-suite'
   'insomnia'
@@ -29,7 +28,6 @@ declare -a list_of_apps=(
   'vanilla'
   'visual-studio-code'
   'warp'
-  'zoom'
 )
 for app in "${list_of_apps[@]}"; do
   brew install --cask "$app"

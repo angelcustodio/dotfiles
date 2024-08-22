@@ -4,9 +4,13 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 export EDITOR="vi"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:/Users/$USER/.yarn/bin"
+export GPG_TTY=$(tty)
 
 ### BREW
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+### PYENV
+eval "$(pyenv init -)"
 
 ### NVM
 export NVM_DIR="$HOME/.nvm"
@@ -15,6 +19,10 @@ export NVM_DIR="$HOME/.nvm"
 ### SHORTENERS & CHEATS
 alias npmglob="npm list -g --depth=0"
 alias fixopenwith="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder && echo 'DONE';"
+
+bypassq() {
+  xattr -d com.apple.quarantine "$1"
+}
 
 ### AUTOJUMP
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
@@ -29,8 +37,7 @@ c_red=`tput setaf 1`
 c_green=`tput setaf 2`
 c_sgr0=`tput sgr0`
 
-branch_color ()
-{
+branch_color() {
   if git rev-parse --git-dir >/dev/null 2>&1
   then
     color=""
