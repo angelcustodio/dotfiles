@@ -52,10 +52,12 @@ for package in "${list_of_packages[@]}"; do
 done
 
 echo "> Install Node 20.17"
-nvm install 20.17 && nvm alias default 20.17
+nvm install 20.17
+nvm alias default 20.17
 
 echo "> Install Python 3.10"
-pyenv install 3.10 && pyenv global 3.10
+pyenv install 3.10
+pyenv global 3.10
 
 echo ""
 echo "DONE! All apps and packages are installed!"
