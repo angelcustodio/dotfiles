@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSNavLastRootDirectory</key>
+	<string>~/Desktop</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{800, 448}</string>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>464 473 800 448 0 0 1728 1079 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>970 762 620 398 0 0 2560 1415 </string>
+	<key>SUEnableAutomaticChecks</key>
+	<false/>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2024-07-03T23:31:15Z</date>
+	<key>alternateDefaultShortcuts</key>
+	<false/>
+	<key>hideMenubarIcon</key>
+	<true/>
+	<key>lastVersion</key>
+	<string>86</string>
+	<key>launchOnLogin</key>
+	<true/>
+	<key>reflowTodo</key>
+	<dict>
+		<key>keyCode</key>
+		<integer>45</integer>
+		<key>modifierFlags</key>
+		<integer>786432</integer>
+	</dict>
+	<key>subsequentExecutionMode</key>
+	<integer>1</integer>
+	<key>toggleTodo</key>
+	<dict>
+		<key>keyCode</key>
+		<integer>11</integer>
+		<key>modifierFlags</key>
+		<integer>786432</integer>
+	</dict>
+	<key>unsnapRestore</key>
+	<integer>2</integer>
+	<key>windowSnapping</key>
+	<integer>2</integer>
+</dict>
+</plist>

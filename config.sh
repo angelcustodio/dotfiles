@@ -100,6 +100,7 @@ defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool true
 defaults write -g NSAutomaticQuotesSubstitutionEnabled -bool false
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write -g com.apple.swipescrolldirection -bool false
+defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop 0
 defaults write com.apple.WindowManager StageManagerHideWidgets 1
 defaults write com.apple.WindowManager StandardHideWidgets 1
@@ -108,34 +109,44 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults write com.apple.spaces spans-displays -bool true
 defaults write com.apple.menuextra.clock DateFormat -string "\"EEE d MMM HH:mm\""
+defaults write com.apple.controlcenter AirplayRecieverEnabled -bool false
+defaults write com.apple.controlcenter BatteryShowPercentage -bool true
+defaults write com.apple.applicationaccess allowAirPlayIncomingRequests -bool false
+defaults write com.apple.dock wvous-tl-corner -int 0
+defaults write com.apple.dock wvous-tl-modifier -int 0
+defaults write com.apple.dock wvous-tr-corner -int 0
+defaults write com.apple.dock wvous-tr-modifier -int 0
+defaults write com.apple.dock wvous-bl-corner -int 0
+defaults write com.apple.dock wvous-bl-modifier -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
+defaults write com.apple.dock wvous-br-modifier -int 0
 
 systemsetup -setcomputersleep Off > /dev/null
 
 sudo chflags nohidden ~/Library
 
 defaults write com.apple.spotlight orderedItems -array \
-  '{"enabled" = 1;"name" = "APPLICATIONS";}' \
-  '{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-  '{"enabled" = 1;"name" = "DIRECTORIES";}' \
-  '{"enabled" = 0;"name" = "PDF";}' \
-  '{"enabled" = 0;"name" = "FONTS";}' \
-  '{"enabled" = 0;"name" = "DOCUMENTS";}' \
-  '{"enabled" = 0;"name" = "MESSAGES";}' \
-  '{"enabled" = 0;"name" = "CONTACT";}' \
-  '{"enabled" = 0;"name" = "EVENT_TODO";}' \
-  '{"enabled" = 0;"name" = "IMAGES";}' \
-  '{"enabled" = 0;"name" = "BOOKMARKS";}' \
-  '{"enabled" = 0;"name" = "MUSIC";}' \
-  '{"enabled" = 0;"name" = "MOVIES";}' \
-  '{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-  '{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-  '{"enabled" = 0;"name" = "SOURCE";}' \
-  '{"enabled" = 0;"name" = "MENU_DEFINITION";}' \
-  '{"enabled" = 0;"name" = "MENU_OTHER";}' \
-  '{"enabled" = 1;"name" = "MENU_CONVERSION";}' \
-  '{"enabled" = 1;"name" = "MENU_EXPRESSION";}' \
-  '{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
-  '{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
+  '{ enabled = 1; name = "APPLICATIONS";}' \
+  '{ enabled = 1; name = "MENU_EXPRESSION";}' \
+  '{ enabled = 0; name = "CONTACT";}' \
+  '{ enabled = 1; name = "MENU_CONVERSION";}' \
+  '{ enabled = 0; name = "MENU_DEFINITION";}' \
+  '{ enabled = 0; name = "DOCUMENTS";}' \
+  '{ enabled = 0; name = "EVENT_TODO";}' \
+  '{ enabled = 1; name = "DIRECTORIES";}' \
+  '{ enabled = 0; name = "FONTS";}' \
+  '{ enabled = 0; name = "IMAGES";}' \
+  '{ enabled = 0; name = "MESSAGES";}' \
+  '{ enabled = 0; name = "MOVIES";}' \
+  '{ enabled = 0; name = "MUSIC";}' \
+  '{ enabled = 0; name = "MENU_OTHER";}' \
+  '{ enabled = 0; name = "PDF";}' \
+  '{ enabled = 0; name = "PRESENTATIONS";}' \
+  '{ enabled = 0; name = "MENU_SPOTLIGHT_SUGGESTIONS";}' \
+  '{ enabled = 0; name = "SPREADSHEETS";}' \
+  '{ enabled = 1; name = "SYSTEM_PREFS";}' \
+  '{ enabled = 0; name = "TIPS";}' \
+  '{ enabled = 0; name = "BOOKMARKS";}'
 
 echo "> Set git config"
 echo ""

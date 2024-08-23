@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>AC Power</key>
+        <dict>
+                <key>DarkWakeBackgroundTasks</key>
+                <integer>1</integer>
+                <key>Disk Sleep Timer</key>
+                <integer>10</integer>
+                <key>Display Sleep Timer</key>
+                <integer>0</integer>
+                <key>System Sleep Timer</key>
+                <integer>0</integer>
+                <key>Wake On LAN</key>
+                <integer>0</integer>
+        </dict>
+        <key>Battery Power</key>
+        <dict>
+                <key>DarkWakeBackgroundTasks</key>
+                <integer>1</integer>
+                <key>Disk Sleep Timer</key>
+                <integer>10</integer>
+                <key>Display Sleep Timer</key>
+                <integer>0</integer>
+                <key>ReduceBrightness</key>
+                <false/>
+                <key>System Sleep Timer</key>
+                <integer>1</integer>
+                <key>Wake On LAN</key>
+                <integer>0</integer>
+        </dict>
+        <key>SystemPowerSettings</key>
+        <dict>
+                <key>DestroyFVKeyOnStandby</key>
+                <false/>
+                <key>Update DarkWakeBG Setting</key>
+                <true/>
+        </dict>
+</dict>
+</plist>
