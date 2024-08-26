@@ -47,7 +47,8 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 echo "> Set mouse config"
-defaults write .GlobalPreferences com.apple.mouse.scaling -1
+defaults write ~/Library/Preferences/.GlobalPreferences com.apple.mouse.scaling -1
+defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationMagnification -bool YES
 
 echo "> Set trackpad config"
 defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -int 1
