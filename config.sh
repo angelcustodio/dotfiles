@@ -46,6 +46,9 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
+echo "> Set mouse config"
+defaults write .GlobalPreferences com.apple.mouse.scaling -1
+
 echo "> Set trackpad config"
 defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -int 1
 defaults write com.apple.AppleMultitouchTrackpad ActuateDetents -int 0
