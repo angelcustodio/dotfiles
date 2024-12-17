@@ -26,8 +26,8 @@ defaults write com.apple.dock show-process-indicators -bool true
 
 echo "> Set keyboard config"
 defaults write -g ApplePressAndHoldEnabled -bool false
-defaults write -g KeyRepeat -int 1
-defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 120
 defaults write com.apple.BezelServices kDim -bool false
 defaults write com.apple.BezelServices kDimTime -int 300
 

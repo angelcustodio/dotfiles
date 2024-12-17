@@ -20,3 +20,7 @@ You can run `install` and `config` remotely, using `curl` this way:
 curl https://raw.githubusercontent.com/angelcustodio/dotfiles/master/install.sh | bash
 curl https://raw.githubusercontent.com/angelcustodio/dotfiles/master/config.sh | bash
 ```
+
+## Help references
+
+Here: `open ~/Library/Preferences/.GlobalPreferences.plist`
