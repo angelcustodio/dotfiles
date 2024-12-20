@@ -21,6 +21,7 @@ alias npmglob="npm list -g --depth=0"
 alias fixopenwith="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder && echo 'DONE';"
 alias brewpurgepkgs="brew remove --force $(brew list --formula)"
 alias brewpurgeapps="brew remove --cask --force $(brew list)"
+alias btfix="sudo defaults write /Library/Preferences/com.apple.airport.bt.plist bluetoothCoexMgmt Hybrid"
 
 bypassq() {
   xattr -d com.apple.quarantine "$1"
