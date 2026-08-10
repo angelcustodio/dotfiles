@@ -13,16 +13,17 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "> Apps installation"
 declare -a list_of_apps=(
+  'another-redis-desktop-manager'
   'caffeine'
   'coconutbattery'
   'elgato-wave-link'
+  'finicky'
   'google-chrome'
   'gpg-suite'
-  'insomnia'
-  'karabiner-elements'
   'meetingbar'
+  'openlens'
+  'orbstack'
   'rectangle'
-  'slack'
   'spotify'
   'topnotch'
   'vanilla'
@@ -40,24 +41,34 @@ declare -a list_of_packages=(
   'bash-completion'
   'git'
   'htop'
-  'kubectx'
-  'kubernetes-cli'
   'nvm'
   'pyenv'
   'rbenv'
+  'redis'
+  's3cmd'
+  'telnet'
   'wget'
 )
 for package in "${list_of_packages[@]}"; do
   brew install "$package"
 done
 
-echo "> Install Node 20.17"
-nvm install 20.17
-nvm alias default 20.17
+echo "> Install Deno"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/justjavac/dvm/main/install.sh)"
+dvm install 2.9.5
+dvm use 2.9.5
 
-echo "> Install Python 3.10"
-pyenv install 3.10
-pyenv global 3.10
+echo "> Install Node 26"
+nvm install 26
+nvm use 26
+
+echo "> Install Python 3"
+pyenv install 3
+pyenv global 3
+
+echo "> Install Ruby 4"
+rbenv install 4
+rbenv global 4
 
 echo ""
 echo "DONE! All apps and packages are installed!"
