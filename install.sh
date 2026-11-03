@@ -16,6 +16,8 @@ declare -a list_of_apps=(
   'another-redis-desktop-manager'
   'caffeine'
   'coconutbattery'
+  'claude',
+  'claude-code',
   'elgato-wave-link'
   'finicky'
   'google-chrome'
@@ -24,11 +26,13 @@ declare -a list_of_apps=(
   'openlens'
   'orbstack'
   'rectangle'
+  'slack'
   'spotify'
   'topnotch'
   'vanilla'
   'visual-studio-code'
   'warp'
+  'work-louder-input'
 )
 for app in "${list_of_apps[@]}"; do
   brew install --cask "$app"
