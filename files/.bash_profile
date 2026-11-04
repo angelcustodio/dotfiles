@@ -3,7 +3,6 @@ export USER=$(whoami)
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export EDITOR="vi"
 export PATH="/usr/local/bin:$PATH"
-export PATH="$PATH:/Users/$USER/.yarn/bin"
 export GPG_TTY=$(tty)
 
 ### BREW
@@ -15,6 +14,13 @@ eval "$(pyenv init -)"
 ### NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+
+### DVM
+export DVM_DIR="/Users/$USER/.dvm"
+export PATH="$DVM_DIR/bin:$PATH"
+
+### YARN
+export PATH="$PATH:/Users/$USER/.yarn/bin"
 
 ### SHORTENERS & CHEATS
 alias npmglob="npm list -g --depth=0"

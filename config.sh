@@ -2,10 +2,6 @@
 
 read -p "Set your device name: " DEVICENAME
 
-echo ""
-echo "> Set bash as default"
-chsh -s /bin/bash
-
 echo "> Set device name to $DEVICENAME"
 sudo scutil --set ComputerName $DEVICENAME
 sudo scutil --set HostName $DEVICENAME
@@ -47,6 +43,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 echo "> Set mouse config"
+defaults write NSGlobalDomain com.apple.mouse.linear -bool YES
 defaults write ~/Library/Preferences/.GlobalPreferences com.apple.mouse.scaling -1
 defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationMagnification -bool YES
 
@@ -105,10 +102,10 @@ defaults write -g NSAutomaticQuotesSubstitutionEnabled -bool false
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write -g com.apple.swipescrolldirection -bool false
 defaults write com.apple.LaunchServices LSQuarantine -bool false
-defaults write com.apple.WindowManager EnableStandardClickToShowDesktop 0
-defaults write com.apple.WindowManager StageManagerHideWidgets 1
-defaults write com.apple.WindowManager StandardHideWidgets 1
-defaults write com.apple.WindowManager AutoHide 1
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -int 0
+defaults write com.apple.WindowManager StageManagerHideWidgets -int 1
+defaults write com.apple.WindowManager StandardHideWidgets -int 1
+defaults write com.apple.WindowManager AutoHide -int 1
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults write com.apple.spaces spans-displays -bool true

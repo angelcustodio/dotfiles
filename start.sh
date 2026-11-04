@@ -27,6 +27,10 @@ echo "Now, let's install apps and packages, it can take a while..."
 source ./install.sh
 
 echo ""
+echo "Now, let's set your default shell, it should be quick..."
+source ./install.sh
+
+echo ""
 echo "Now, let's configure your system..."
 source ./config.sh
 

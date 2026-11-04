@@ -42,6 +42,7 @@ echo "> Packages installation"
 declare -a list_of_packages=(
   'autojump'
   'awscli'
+  'bash'
   'bash-completion'
   'git'
   'htop'
@@ -58,7 +59,8 @@ for package in "${list_of_packages[@]}"; do
 done
 
 echo "> Install Deno"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/justjavac/dvm/main/install.sh)"
+curl -fsSL https://deno.land/x/dvm/install.sh | bash
+source /Users/$(whoami)/.bash_profile
 dvm install 2.9.5
 dvm use 2.9.5
 

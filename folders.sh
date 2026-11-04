@@ -21,6 +21,6 @@ echo "> Encode plist files"
 
 echo "> Move plist files"
 \sudo rm -f /Library/Preferences/com.apple.PowerManagement.plist
-\cp -f $HOME/dotfiles/configs/dev.warp.Warp-Stable.plist /Library/Preferences/
-\cp -f $HOME/dotfiles/configs/com.apple.PowerManagement.plist /Library/Preferences/
-\cp -f $HOME/dotfiles/configs/com.knollsoft.Rectangle.plist /Library/Preferences/
+\sudo cp -f $HOME/dotfiles/configs/dev.warp.Warp-Stable.plist /Library/Preferences/
+\sudo cp -f $HOME/dotfiles/configs/com.apple.PowerManagement.plist /Library/Preferences/
+\sudo cp -f $HOME/dotfiles/configs/com.knollsoft.Rectangle.plist /Library/Preferences/
